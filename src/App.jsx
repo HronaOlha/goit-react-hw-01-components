@@ -1,17 +1,16 @@
-import css from './App.module.css';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-import { Friends } from './Friends/Friends';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Friends } from './components/Friends/Friends';
+import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
 
-import user from '../user.json';
-import data from '../data.json';
-import friendsInfo from '../friends.json';
-import transactionsInfo from '../transactions.json';
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friendsInfo from 'data/friends.json';
+import transactionsInfo from 'data/transactions.json';
 
 export const App = () => {
   return (
-    <div className={css.container}>
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
