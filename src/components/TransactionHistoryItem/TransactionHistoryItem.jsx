@@ -1,6 +1,6 @@
-export const TransactionHistoryItem = ({
-  item: { type, amount, currency },
-}) => {
+import PropTypes from 'prop-types';
+
+export const TransactionHistoryItem = ({ type, amount, currency }) => {
   return (
     <>
       <td>{type}</td>
@@ -8,4 +8,10 @@ export const TransactionHistoryItem = ({
       <td>{currency}</td>
     </>
   );
+};
+
+TransactionHistoryItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };

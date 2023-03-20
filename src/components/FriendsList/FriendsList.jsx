@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import css from './FriendsList.module.css';
 
-export const FriendsList = ({ friend: { avatar, name, isOnline } }) => {
+export const FriendsList = ({ avatar, name, isOnline }) => {
   return (
     <>
       {/* СТИЛІ В СSS до цього спану */}
@@ -9,4 +10,10 @@ export const FriendsList = ({ friend: { avatar, name, isOnline } }) => {
       <p className="name">{name}</p>
     </>
   );
+};
+
+FriendsList.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
