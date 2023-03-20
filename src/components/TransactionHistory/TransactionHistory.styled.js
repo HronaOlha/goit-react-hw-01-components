@@ -15,7 +15,7 @@ export const Titles = styled.th`
 `;
 
 export const Row = styled.tr`
-  &:nth-child(odd) {
+  &:nth-of-type(2n) {
     background-color: #d3d2d2;
   }
 `;
