@@ -1,24 +1,14 @@
-# goit-react-hw-08-phonebook
+# goit-react-hw-01-components
 
-## Contacts book
-Add the ability to register, login and update the user, as well as work with a private collection of contacts, to the "Contact Book" program.
+### 1.Social network profile
+We need to create a <Profile> component with which we can display information about a social network user. User data is in the user.json file.
 
-#### Routing
-Add routing with the React Router library. The program should have several pages:
+### 2.Statistics section
+Create a <Statistics> component that would display statistics from passed props. For example, cloud uploads by file type, website visits by users in different countries, financial costs, etc. Statistics data is in the data.json file.
 
-/register - public route for registering a new user with a form
-/login - public login route of an existing user with a form
-/contacts - a private route for working with the user's contact list
-Add a Navigation component with links for navigating routes.
+### 3.List of friends
+We need to create a <FriendList> component with which we can display information about the user's friends. Information about friends is stored in the friends.json file.
 
-#### User menu
-Create a UserMenu component that displays the user's mail and a logout button. Here's what its markup might look like.
-```html
-<div>
-   <p>mango@mail.com</p>
-   <button>Logout</button>
-</div>
-```
+### 4.History of transactions
+It is necessary to create a transaction history component in the personal account of the Internet bank.
 
-#### Stylization
-This is the final version of the program, so work on the design of the interface. You can use a styling or component library such as Chakra UI or Material UI.
