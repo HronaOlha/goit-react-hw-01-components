@@ -1,5 +1,7 @@
 # goit-react-hw-01-components
 
+## Tasks
+
 ### 1.Social network profile
 We need to create a <Profile> component with which we can display information about a social network user. User data is in the user.json file.
 
